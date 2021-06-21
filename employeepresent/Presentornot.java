@@ -1,49 +1,33 @@
-package uc3_PartTime_Emp_Wage;
+package UC4_Using_SwitchCase;
 
-import java.util.Random;
+import java.util.*;
 
-import uc2_Calculate_Daily_Employee_Wage.Daily_Wage;
-
-public class PartTime_Wage extends Daily_Wage {   
+import UC3_PartTime_Emp_Wage.PartTime_Wage;
+public class Switch extends PartTime_Wage {
 	
-	public static int Attendance() {
+	public static int Switchcase() {
 		
-		Random random = new Random();
-		int check = random.nextInt(3);
-		
-		return check;
+		Random randome = new Random();
+		int ans = random.nextInt(3);
+		return ans;
 	}
-	
-    public static int PartTimeWage() {           
-    	
-    	int Wage = 20, PartTime = 4;
-    	int PartTimeWage = Wage * PartTime;
-        return PartTimeWage;
-	
-    	
-    }
-    
+
 	public static void main(String[] args) {
 		
-		int isPresent = 1, isParttime = 2, isAbsent=0;
+		int ans = Switch();
 		
-		int attendance = Attendance();  
-		int dailyWage = dailyWage();                    
+		switchcase (ans) {
 		
-		if (attendance == isPresent) {
+		case 1:                                                       
+			System.out.println("Employee Full day Wager = "+Wage());
+			break;
 			
-			System.out.print("Employee Full day wage = "+dailyWage);
-			}
-			
-		else if(attendance == isParttime) {
-
-			System.out.println("Employee Part time wage = "+PartTimeWage());
-			}
+		case 2:                                                    
 		
-		else {
-			
-			System.out.println("Employee Daily Wager = "+isAbsent);
+			System.out.println("Employee Part time Wager = "+PartTimeWage());
+			break;
+		default:
+			System.out.println("Employee is Absent");             
 		}
+		
 	}
-
-}
