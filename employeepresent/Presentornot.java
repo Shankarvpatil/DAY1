@@ -1,6 +1,6 @@
 package UC5_Employee_Month_Wages;
 
-import UC4_Wager_Using_Switch_Case.SwitchCase;
+import UC4_Using_SwitchCase.SwitchCase;
 
 public class Monthly_Wages extends SwitchCase {
 
