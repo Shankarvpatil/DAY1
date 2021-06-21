@@ -1,8 +1,8 @@
-package uc3_PartTime_Emp_Wage;
+package UC3_Part_time_Employee_Wages;
 
 import java.util.Random;
 
-import uc2_Calculate_Daily_Employee_Wage.Daily_Wage;
+import UC2_Daily_Wage.Daily_Wage;
 
 public class PartTime_Wage extends Daily_Wage {   
 	
