@@ -1,4 +1,4 @@
-package uc1.Emloyee.Attendance;
+package UC1.Emloyeepresentornot;
 import java.util.*;
 public class Emp_Attendance {
 	public static int Presenty() {
