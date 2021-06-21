@@ -10,7 +10,7 @@ public class Emp_Attendance {
 	}
 	public static void main(String args[]) {
 		
-		int check = Presenty();
+		int Ans = Presenty();
 		int isPresent = 1, isAbsent = 0;
 		
 		if( ans == isPresent ) {
