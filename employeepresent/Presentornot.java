@@ -1,11 +1,23 @@
-public class Presentornot {
-        public static void main(String[] args) {
-                int Full_time = 1;
-                double empCheck = Math.floor(Math.random() * 10) % 2;
-                if(empCheck == Full_time)
-                        System.out.println("Employee is present");
-                else
-                        System.out.println("Employee is absent");
-        }
+package uc1.Emloyee.Attendance;
+import java.util.*;
+public class Emp_Attendance {
+	public static int Presenty() {
+	
+		Random random = new Random();
+		int ans = random.nextInt(2);
+	
+		return ans;
+	}
+	public static void main(String args[]) {
+		
+		int check = Presenty();
+		int isPresent = 1, isAbsent = 0;
+		
+		if( ans == isPresent ) {
+			System.out.println("Employee is present");	
+		}
+		else {	
+			System.out.println("Employee is absent");
+		}	
+	}
 }
-
