@@ -1,33 +1,35 @@
-package UC4_Using_SwitchCase;
+package UC5_Employee_Month_Wages;
 
-import java.util.*;
+import UC4_Wager_Using_Switch_Case.SwitchCase;
 
-import UC3_PartTime_Emp_Wage.PartTime_Wage;
-public class Switch extends PartTime_Wage {
-	
-	public static int Switchcase() {
-		
-		Random randome = new Random();
-		int ans = random.nextInt(3);
-		return ans;
-	}
+public class Monthly_Wages extends SwitchCase {
 
 	public static void main(String[] args) {
 		
-		int ans = Switch();
+		int TotalWage = 0;
 		
-		switchcase (ans) {
+		for(int Day = 1; Day <= 20; Day++) {
 		
-		case 1:                                                       
-			System.out.println("Employee Full day Wager = "+Wage());
-			break;
+			int check = Switch();
 			
-		case 2:                                                    
-		
-			System.out.println("Employee Part time Wager = "+PartTimeWage());
-			break;
-		default:
-			System.out.println("Employee is Absent");             
+			switch (check) {
+			
+			case 1:                                                     
+				TotalWage += Wage();     
+				break;
+				
+			case 2:                                                      
+			
+				TotalWage += PartTimeWage() + Wage();
+				break;
+				
+			default:                                                   
+
+               TotalWage += 0;
+			}
 		}
-		
+
+		System.out.println(" Employee Monthly wager = "+TotalWage);
 	}
+
+}
